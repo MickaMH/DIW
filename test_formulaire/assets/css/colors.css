@@ -1,0 +1,146 @@
+.parallax{
+    background-image: url("/assets/images/background_resto.webp");
+    /* background-image: url("/assets/images/background_resto_2.jpg"); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bordures_body{
+    border: 0.1rem solid black;
+}
+
+.couleur_fond{
+    background-color: gold;
+}
+
+/* #fond_logo{
+    background-color: #980848;
+} */
+
+.bordures_logo{
+    border-radius: 2rem 2rem;
+    background-color: #980848;
+}
+
+.bordures{
+    border-color: #980848;
+}
+
+.bordures_header{
+    border-bottom: 0.3rem solid #980848;
+}
+
+.bordures_main{
+    border-top: 0.3rem solid #980848;
+    /* background-color: #fef4e8; */
+}
+
+.bordures_footer{
+    border-top: 0.3rem solid #980848;
+}
+
+#zoom{
+    transition: transform .4s;
+}
+
+#zoom:hover{
+    transform: scale(1.5);
+}
+
+.lettres{
+    color: #980848;
+}
+
+.lettres_blanches{
+    color: white;
+}
+
+.lettres_neon{
+    color: #980848;
+    text-shadow:    0 0 6px #8f8489,
+                    0 0 30px #946d7f,
+                    0 0 12px #940f4b,
+                    0 0 21px #9e0e4f,                   /* NEON */
+                    0 0 34px #720536,
+                    0 0 54px #bb0a59;
+}
+
+.liens_header{
+    color: #980848;
+    text-decoration: none;
+}
+
+/* .fond_cartes{
+    background-color: #fef4e8;
+} */
+
+.bouton{
+    background-color: #980848;
+    color: white;
+    border: none;
+}
+
+.bouton_envoyer{
+    background-color: #980848;
+    color: white;
+    border: none;
+}
+
+#bouton_arrondi_gauche{
+    background-color: #980848;
+    color: white;
+    border-top-left-radius: 3rem 3rem;
+    border-bottom-left-radius: 3rem 3rem;
+}
+
+#bouton_arrondi_droit{
+    background-color: #980848;
+    color: white;
+    border-top-right-radius: 3rem 3rem;
+    border-bottom-right-radius: 3rem 3rem;
+}
+
+#panneaux{
+    background-color: #980848;
+    color: white;
+    border-top-left-radius: 1rem 1rem;
+    border-top-right-radius: 1rem 1rem;
+    border: 0.2rem solid white;
+    border-bottom: none;
+}
+
+textarea{
+    resize: none;
+}
+
+sup{
+    color: red; font-size: 1.5rem ;
+}
+
+.quantite{
+    border-color: #980848;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* #color{
+    color:#8f8489;
+    color: #946d7f;
+    color: #940f4b;
+    color: #9e0e4f;
+    color: #720536;
+    color: #bb0a59;
+} */
+
+ .lettres_neon_ok{
+    color: #c6e2ff;
+    text-shadow:   0 0 6px rgba(202,228,225,0.92),
+                    0 0 30px rgba(202,228,225,0.34),
+                    0 0 12px rgba(30,132,242,0.52),
+                    0 0 21px rgba(30,132,242,0.92),
+                    0 0 34px rgba(30,132,242,0.78),
+                    0 0 54px rgba(30,132,242,0.92);
+} 
