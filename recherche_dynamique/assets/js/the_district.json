@@ -70,7 +70,7 @@
       "libelle": "PIZZA Bianca",
       "description": "Une pizza fine et croustillante garnie de crème mascarpone légèrement citronnée et de tranches de saumon fumé, le tout relevé de baies roses et de basilic frais.",
       "prix": 14,
-      "image": "assets/img/plats/pizza_salmon.png",
+      "image": "assets/img/plats/pizza_salmon.jpeg",
       "id_categorie": 4,
       "active": "Yes"
      },

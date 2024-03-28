@@ -8,7 +8,7 @@
             rel="stylesheet" 
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/colors.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets\css\colors.css" type="text/css" media="all">
 
     <title>Accueil</title>
 </head>
@@ -104,17 +104,30 @@
                 </video>      
 
             </div>
-        
-            <div class="col-4 position-absolute d-flex align-self-center flex-column">
+            
+            <!-- <div class="col-4 position-absolute d-flex align-self-center flex-column">
     
-                <input type="text" class="w-100 fs-4 fw-medium rounded-5 form-control border-4 d-none d-lg-block bordures" 
+                <input type="text" class="w-100 fs-4 fw-medium form-control d-none d-lg-block champ_recherche" 
                         placeholder="&#x1F50E; Rechercher un plat" aria-label="Rechercher" id="recherche_dynamique">
             
-                <ul id="suggestions" class="fs-4 fw-medium d-none d-lg-block champ_suggestions"></ul>
+                <div id="suggestions" class="fs-4 fw-medium d-none d-lg-block champ_suggestions"></div>
+                
+            </div> -->
 
-                <!-- <input type="text" id="searchInput" placeholder="Rechercher un fruit...">
-                <ul id="results"></ul> -->
+            <div class="position-absolute input-group mb-3 d-flex flex-column align-self-center 
+                        w-50 d-none d-lg-block champ_recherche">
 
+                <div class="d-flex champ_suggestions">
+
+                    <span class="input-group-text border-0 fs-4 bg-white" id="basic-addon1">&#x1F50E;</span>
+
+                    <input type="text" class="fs-4 fw-medium form-control border-0" 
+                        placeholder="Rechercher un plat" aria-label="Rechercher" id="recherche_dynamique">
+                
+                </div>
+
+                <div id="suggestions" class="fs-4 fw-medium  champ_suggestions"></div>
+                        
             </div>
                
         </div>
@@ -364,7 +377,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<script src="assets\js\recherche_dynamique.js"></script>
+<script src="assets\js\rech_bis.js"></script>
 
 </body>
 </html>
