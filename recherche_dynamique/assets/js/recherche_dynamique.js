@@ -1,83 +1,67 @@
-        // Récupérez le champ de texte et la liste de suggestions
-        let searchInput = document.querySelector('#recherche_dynamique');
-        let suggestionsList = document.querySelector('#suggestions');
+// Chargement du fichier JSON (assurez-vous que le chemin est correct)
+fetch("assets/js/the_district.json")
+  .then(response => response.json())
+  .then(data3 => {
 
-        // Liste de mots clés (vous pouvez la remplacer par vos propres données)
-        let keywords = 'assets\js\the_district.json';
+    let recherche = document.getElementById("recherche_dynamique");
 
-        // Écoutez l'événement de saisie dans le champ de texte
-        searchInput.addEventListener('input', displaySuggestions);
+    let resultats_recherche = document.getElementById("suggestions");
 
-        function displaySuggestions() {
-            let inputValue = searchInput.value.toLowerCase();
-            let filteredKeywords = keywords.filter(plat => plat.libelle.toLowerCase().startsWith(inputValue));
+    recherche.addEventListener("input", () => {
 
-            // Affichez les suggestions correspondantes
-            suggestionsList.innerHTML = '';
-            filteredKeywords.forEach(plat => {
-                let li = document.createElement('li');
-                li.textContent = plat.libelle;
-                suggestionsList.appendChild(li);
-            });
+      let mots_recherches = recherche.value.toLowerCase();
 
-            // Affichez la liste de suggestions
-            suggestionsList.style.display = 'block';
-        }
+      let plats_filtre = data3.plat.filter(plat =>
+          plat.libelle.toLowerCase().includes(mots_recherches)
 
---------------------------------------------------------------------------
+      );
 
-$(document).ready(function() {
-    let full_url = document.URL;
-    let url_array = full_url.split('=');
-    let categorie_id = url_array[url_array.length - 1];
-    console.log(categorie_id);
+      // Efface les résultats précédents
+      resultats_recherche.innerHTML = "";
 
-    $.getJSON("assets/js/the_district.json", function(data4) {
+      // Affiche les résultats filtrés si le champ de recherche n'est pas vide
+      if (mots_recherches.trim() !== "") {
 
-        
+        plats_filtre.forEach(plat => {
 
-        // Filtrer les plats ayant le même id_categorie que categorie_id
-        let filtre_plats = data4.plat.filter(function(plat) {
-            return categorie_id === plat.id_categorie;
+          let li = document.createElement("li");
+          li.className = "text-decoration-none";
+
+          let img = document.createElement("img");
+          img.src = plat.image;
+          img.alt = plat.libelle;
+          img.className = "p-1 rounded-3";
+          img.style = "width: 5rem; height: 5rem;";
+          li.appendChild(img);
+
+          let libelle = document.createElement("a");
+          libelle.textContent = plat.libelle;
+          libelle.className = "ms-1 text-decoration-none";
+          libelle.style = "color: black";
+          libelle.href = "commande_json.html?id=" + plat.id_plat;
+
+          li.append(img, libelle);
+          resultats_recherche.appendChild(li);
+          
         });
 
+        // Ajoute la bordure supérieure si des résultats sont affichés
+            resultats_recherche.style.borderTop = "0.1rem solid grey";
+            resultats_recherche.style.marginBottom = "0.5rem";
+
+        } 
         
+        else {
+        // Retire la bordure supérieure si le champ de recherche est vide
+            resultats_recherche.style.borderTop = "none";
+            resultats_recherche.style.marginBottom = "0"; // Vous pouvez ajuster cette valeur selon vos préférences
+        }
+      
+    });
 
-        filtre_plats.forEach(plat => {
+  })
 
-            let plats_par_categorie = $("#plats_par_categorie");
-
-        let element_plats = document.createElement("div");
-        element_plats.className="col-lg-4 p-lg-5 pb-lg-0 mb-3 mt-3";
-  
-        let carte_plat = document.createElement("div");
-        carte_plat.className = "card w-100 border-4 bordures rounded-5 ";
-  
-        let image_plat = document.createElement("img");
-        image_plat.src = plat.image;
-        image_plat.className = "card-img-top p-3 rounded-5";
-  
-        let libelle_plat = document.createElement("h5");
-        libelle_plat.textContent = plat.libelle;
-        libelle_plat.className = "card-text fs-3 fw-medium ms-3";
-        console.log(plat.libelle);
-
-        let description_plat = document.createElement("p");
-        description_plat.textContent = plat.description;
-        description_plat.className = "card-text fst-italic fw-medium ms-3 me-3";
-  
-        let commander_plat = document.createElement("a");
-        commander_plat.textContent = "Commander";
-        commander_plat.className = "card-text fs-5 fw-medium text-center shadow-lg p-2 m-3 mt-0 rounded-4 text-decoration-none fond_logo lettres_blanches";
-        commander_plat.href = "commande_json.html?id=" + data4.plat.id_plat;
-  
-    plats_par_categorie.append(element_plats);
-  
-    element_plats.append(carte_plat);
-  
-    carte_plat.append(image_plat, libelle_plat, description_plat, commander_plat);}
-       
-
+  .catch(error =>
+    console.error("Erreur lors du chargement du fichier JSON :", error)
     
-    )})})
-
+  );
