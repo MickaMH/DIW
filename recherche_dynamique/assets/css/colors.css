@@ -65,30 +65,35 @@ bordures_body{
 }
 
 
-.bordures_header{
+bordures_header{
     border-bottom: 0.3rem solid #980848;
 }
 
-.bordures_nav{
+bordures_nav{
     border-top: 0.3rem solid #980848;
     border-bottom: 0.3rem solid #980848;
 }
 
-.bordures_main{
+bordures_main{
     border-top: 0.3rem solid #980848;
 }
 
 
-.bordures_footer{
+bordures_footer{
     border-top: 0.3rem solid #980848;
 }
 
+.rond{
+    /* border-radius: 15rem 15rem; */
+    border-radius: 5rem 5rem;
+    border: 0.2rem solid black;
+}
 
 .zoom{
     transition: transform .4s;
 }
 .zoom:hover{
-    transform: scale(1.2);
+    transform: scale(1.7);
 }
 
 
@@ -113,10 +118,21 @@ bordures_body{
                     0 0 54px #bb0a59;
 }
 
+.bienvenue{
+    color: #980848;
+    font-size: 4rem;
+    
+}
 
 .liens_header{
     color: #980848;
     text-decoration: none;
+}
+
+.liens_header_souligne{
+    color: #980848;
+    text-decoration: none;
+    text-decoration: underline 0.3rem solid #980848;
 }
 
 
