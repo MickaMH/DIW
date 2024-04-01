@@ -84,13 +84,13 @@ bordures_footer{
 }
 
 .rond{
-    /* border-radius: 15rem 15rem; */
     border-radius: 5rem 5rem;
     border: 0.2rem solid black;
+    background-color: white;
 }
 
 .zoom{
-    transition: transform .4s;
+    transition: transform .6s;
 }
 .zoom:hover{
     transform: scale(1.7);
@@ -118,10 +118,23 @@ bordures_footer{
                     0 0 54px #bb0a59;
 }
 
-.bienvenue{
+.bienvenue_desktop{
     color: #980848;
     font-size: 4rem;
+}
+
+.bienvenue_mobile{
+    color: white;
+    font-size: 2.5rem;
+    background-color: #980848;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem 0.5rem;
     
+}
+
+bordures_bienvenue_mobile{
+    border-top: 0.1rem solid #980848;
+    border-bottom: 0.1rem solid #980848;
 }
 
 .liens_header{

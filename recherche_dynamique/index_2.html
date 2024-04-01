@@ -13,100 +13,115 @@
     <title>Accueil</title>
 </head>
 
+
 <body class="m-1 bordures_body parallax_desktop">
 
-<!-- <div class="parallax_desktop"> -->
 
+    <!-- HEADER -->
     <header class="container-fluid bordures_heade">
 
         <div class="row">
 
-                <nav class="navbar navbar-expand-lg">
+            <!-- navbar -->
+            <div class="navbar navbar-expand-lg">
 
-                    <div class="container-fluid">
+                <div class="container-fluid">
     
-                        <button class="navbar-toggler border-3 hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler border-3 hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     
-                            <span class="navbar-toggler-icon hamburger"></span>
+                    <span class="navbar-toggler-icon hamburger"></span>
     
-                        </button>
+                    </button>
 
-                        <div class="col-3 col-lg-2">
+                    <!-- images logo desktop et mobile -->
+                    <div class="col-3 col-lg-2">
                     
-                            <img src="assets\img\images_district\logo.png" alt="Logo The District" 
-                                    title="Logo The District" class="w-100 navbar-brand img-fluid d-none d-lg-block bordures_logo">
+                        <img src="assets\img\images_district\logo.png" alt="Logo The District" 
+                                title="Logo The District" class="w-100 navbar-brand img-fluid d-none d-lg-block bordures_logo">
 
-                            <img src="assets\img\images_district\logo.png" alt="Logo The District" 
-                                    title="Logo The District" class="w-100 navbar-brand img-fluid d-block d-sm-none bordures_logo">        
+                        <img src="assets\img\images_district\logo.png" alt="Logo The District" 
+                                title="Logo The District" class="w-100 navbar-brand img-fluid d-block d-sm-none bordures_logo">        
                 
-                        </div>  
+                    </div>  
 
-                        <div class="col-9 col-lg-10 flex-column">
+                    <div class="col-9 col-lg-10 flex-column">
 
-                            <div class="row">
+                        <div class="row">
 
-                                <div class="collapse navbar-collapse justify-content-center ms-2 mb-lg-5" id="navbarTogglerDemo03">
+                            <!-- liens navbar -->
+                            <div class="collapse navbar-collapse justify-content-center ms-2 mb-lg-5" id="navbarTogglerDemo03">
     
-                                    <ul class="navbar-nav fs-1 fw-medium gap-lg-5">
+                                <ul class="navbar-nav fs-1 fw-medium gap-lg-5">
     
-                                        <li class="nav-item">
-                                            <a class="liens_header_souligne" aria-current="page" href="index.html">ACCUEIL</a>
-                                        </li>
+                                    <li class="nav-item">
+
+                                        <a class="liens_header_souligne" aria-current="page" href="index.html">ACCUEIL</a>
+
+                                    </li>
     
-                                        <li class="nav-item">
-                                            <a class="liens_header" aria-current="page" href="categories.html">CATEGORIES</a>
-                                        </li>
+                                    <li class="nav-item">
+
+                                        <a class="liens_header" aria-current="page" href="categories.html">CATEGORIES</a>
+
+                                    </li>
     
-                                        <li class="nav-item">
-                                            <a class="liens_header" aria-current="page" href="plats.html">PLATS</a>
-                                        </li>
+                                    <li class="nav-item">
+
+                                        <a class="liens_header" aria-current="page" href="plats.html">PLATS</a>
+
+                                    </li>
     
-                                        <li class="nav-item">
-                                            <a class="liens_header" aria-current="page" href="contact.html">CONTACT</a>
-                                        </li>
+                                    <li class="nav-item">
+
+                                        <a class="liens_header" aria-current="page" href="contact.html">CONTACT</a>
+
+                                    </li>
     
-                                    </ul>
+                                </ul>
                     
-                                </div>
-
                             </div>
 
-                            <div class="row justify-content-center mb-lg-5">
-
-                                <div class="position-absolute z-3 input-group d-flex flex-column 
-                                             d-none d-lg-block champ_recherche" style="width: 30rem; height: auto;">
-
-                                    <div class="d-flex p-1 ms-2">
-
-                                        <span class="input-group-text fs-4 sans_bordures bg-white" id="basic-addon1">&#x1F50E;</span>
-
-                                        <input type="text" class="ms-1 fs-4 fw-medium form-control sans_bordures" 
-                                                    placeholder="Rechercher un plat" aria-label="Rechercher" id="recherche_dynamique">
-                
-                                    </div>
-
-                                    <div id="suggestions" class="fs-4 fw-medium"></div>
-                        
-                                </div>
-
-                            </div>
-    
                         </div>
 
-                    </div>
+                        <!-- barre de recherche -->
+                        <div class="row justify-content-center mb-lg-5">
+
+                            <div class="position-absolute z-3 input-group d-flex flex-column 
+                                        d-none d-lg-block champ_recherche" style="width: 30rem; height: auto;">
+
+                                <div class="d-flex p-1 ms-2">
+
+                                    <span class="input-group-text fs-4 sans_bordures bg-white" id="basic-addon1">&#x1F50E;</span>
+
+                                    <input type="text" class="ms-1 fs-4 fw-medium form-control sans_bordures" 
+                                            placeholder="Rechercher un plat" aria-label="Rechercher" id="recherche_dynamique">
+                
+                                </div>
+
+                                <div id="suggestions" class="fs-4 fw-medium"></div>
+                        
+                            </div>
+
+                        </div>
     
-                </nav>
+                    </div>
+
+                </div>
+    
+            </div>
 
         </div>
         
     </header>
+
     
-    
+    <!-- NAV -->
     <nav class="container-fluid">
     
         <div class="row fond_logo">
 
-            <div class="col-4 display-inline-block d-none d-md-block">
+            <!-- videos -->
+            <div class="col-4 display-inline-block d-none d-lg-block">
 
                 <!-- <img src="#" class="img-fluid" alt="" title=""> -->
 
@@ -119,7 +134,7 @@
 
             </div>
     
-            <div class="col-4 display-inline-block d-none d-md-block position-relative z-2">
+            <div class="col-4 display-inline-block d-none d-lg-block position-relative z-2">
 
                 <video autoplay loop muted class="img-fluid">
 
@@ -130,7 +145,7 @@
     
             </div>
 
-            <div class="col-4 display-inline-block d-none d-md-block">
+            <div class="col-4 display-inline-block d-none d-lg-block">
 
                 <!-- <img src="#" class="img-fluid" alt="" title=""> -->
 
@@ -143,6 +158,8 @@
 
             </div>
 
+
+            <!-- barre de recherche dans video -->
             <!-- <div class="position-absolute input-group d-flex flex-column align-self-center justify-content-center
                         w-50 d-none d-lg-block champ_recherche">
 
@@ -158,53 +175,91 @@
                 <div id="suggestions" class="fs-4 fw-medium"></div>
                         
             </div> -->
+
                
         </div>
     
     </nav>
 
 
+    <!-- MAIN -->
     <main class="container-fluid pb-5">
 
-        <div class="row d-flex justify-content-center">
+        <div class="row">
 
-            <!-- <div class="col-sm-10 col-lg-4 fs-1 fw-medium ms-sm-0 ms-lg-3 mt-lg-3">
+            <!-- carousel desktop -->
+            <div class="fw-medium text-center position-relative z-1 d-none d-lg-block">
 
-                <p class="lettres">ACCUEIL</p>
-            
-            </div> -->
-
-            <div class="col-5 fw-medium d-flex justify-content-center position-relative z-1">
-
-                <div id="carouselExampleFade" class="carousel-fade" data-bs-ride="carousel">
+                <div id="carousel_desktop" class="carousel-fade" data-bs-ride="carousel">
 
                     <div class="carousel-inner">
 
-                        <div class="carousel-item active" data-bs-interval="5000">
+                        <div class="carousel-item active" data-bs-interval="4000">
 
                             <!-- <img src="..." class="d-block w-100" alt="..."> -->
-                            <p class="d-block w-100 bienvenue">BIENVENUE</p>
+                            <p class="d-block w-100 bienvenue_desktop">BIENVENUE</p>
 
                         </div>
 
-                        <div class="carousel-item" data-bs-interval="5000">
+                        <div class="carousel-item" data-bs-interval="4000">
 
                             <!-- <img src="..." class="d-block w-100" alt="..."> -->
-                            <p class="d-block w-100 bienvenue">WELCOME</p>
+                            <p class="d-block w-100 bienvenue_desktop">WELCOME</p>
 
                         </div>
 
-                        <div class="carousel-item" data-bs-interval="5000">
+                        <div class="carousel-item" data-bs-interval="4000">
 
                             <!-- <img src="..." class="d-block w-100" alt="..."> -->
-                            <p class="d-block w-100 bienvenue">BIENVENIDA</p>
+                            <p class="d-block w-100 bienvenue_desktop">BIENVENIDA</p>
 
                         </div>
 
-                        <div class="carousel-item" data-bs-interval="5000">
+                        <div class="carousel-item" data-bs-interval="4000">
 
                             <!-- <img src="..." class="d-block w-100" alt="..."> -->
-                            <p class="d-block w-100 bienvenue">WILLKOMMEN</p>
+                            <p class="d-block w-100 bienvenue_desktop">WILLKOMMEN</p>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+            
+            </div>
+
+            <!-- carousel mobile -->
+            <div class="fw-medium d-flex justify-content-center position-relative z-1 d-block d-sm-none">
+
+                <div id="carousel_mobile" class="carousel-fade" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active" data-bs-interval="4000">
+
+                            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                            <p class="d-block w-100 bienvenue_mobile ps-3 pe-3">BIENVENUE</p>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="4000">
+
+                            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                            <p class="d-block w-100 bienvenue_mobile ps-3 pe-3">WELCOME</p>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="4000">
+
+                            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                            <p class="d-block w-100 bienvenue_mobile ps-3 pe-3">BIENVENIDA</p>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="4000">
+
+                            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                            <p class="d-block w-100 bienvenue_mobile ps-3 pe-3">WILLKOMMEN</p>
 
                         </div>
 
@@ -216,19 +271,83 @@
 
         </div>
 
-        <!-- <div class="row">
+        <!-- icones categories mobile -->
+        <div class="row mt-3 mb-2 d-block d-sm-none">
 
-            <div>
+            <div class="card-group text-center">
 
-                <div style="width: 12rem; height: auto;" id="ww_5a5f5bdcff26b" v='1.3' loc='id' a='{"t":"horizontal","lang":"fr","sl_lpl":1,"ids":["wl3243"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Plus de prévisions: <a href="https://oneweather.org/fr/paris/30_jours/" id="ww_5a5f5bdcff26b_u" target="_blank">Météo 30 jours</a></div>
+                <div class="card shadow-lg border-4 bordures rounded-5 zoom mx-auto mb-4" style="width: 10rem; height: 10rem;">
+
+                    <div>
+
+                        <p class="card-text mb-1 fw-medium">Toutes les<br> catégories de plat</p>
+
+                        <img src="assets\img\icones\icone_categories_transp_2.png" class="card-img mt-1" style="width: 33%;" alt="" title="">
             
+                    </div>
+
+                    <div class="mt-3 ms-2 me-2 rounded-5 fond_logo text-center" style="height: 1.6rem;">
+                        
+                        <a href="categories.html" class="text-decoration-none">
+                        <p class="fw-medium lettres_blanches">CATEGORIES</p>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="card shadow-lg border-4 bordures rounded-5 zoom mx-auto mb-4" style="width: 10rem; height: 10rem;">
+
+                    <div>
+
+                        <p class="card-text mb-1 fw-medium">Retrouvez tous<br> nos plats</p>
+
+                        <img src="assets\img\icones\icone_plats_transp_2.png" class="card-img mt-1" style="width: 37%;" alt="" title="">
+            
+                    </div>
+
+                    <div class="mt-3 ms-2 me-2 rounded-5 fond_logo text-center" style="height: 1.6rem;">
+                        
+                        <a href="plats.html" class="text-decoration-none">
+
+                        <p class="fw-medium lettres_blanches">PLATS</p>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="card shadow-lg border-4 bordures rounded-5 zoom mx-auto" style="width: 10rem; height: 10rem;">
+
+                    <div>
+
+                        <p class="card-text mb-1 fw-medium">Adressez nous<br> vos demandes</p>
+
+                        <img src="assets\img\icones\icone_contact_transp_2.png" class="card-img mt-1 ms-2" style="width: 30%;" alt="" title="">
+            
+                    </div>
+
+                    <div class="mt-3 ms-2 me-2 rounded-5 fond_logo text-center" style="height: 1.6rem;">
+                        
+                        <a href="contact.html" class="text-decoration-none">
+
+                        <p class="fw-medium lettres_blanches">CONTACT</p>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
 
-        </div> -->
+        </div>
 
-        <div class="container-fluid rond bordures mt-3" style="width: 29rem; height: 28rem;">
+        <!-- icones categories desktop -->
+        <div class="container-fluid rond bordures mt-3 d-none d-lg-block" style="width: 29rem; height: 28rem;">
 
-        <div class="row mt-3 mb-2">
+        <div class="row mt-3">
 
             <div class="col-lg-12 text-center d-flex justify-content-center">
                 
@@ -254,32 +373,9 @@
                 
             </div>
 
-            <!-- <img src="assets\img\icones\boussole_1.png" class="align-self-end" style="width: 10rem; height: 10rem;" alt=""> -->
-
-            <!-- <div class="col-lg-3 mt-3 mt-lg-0 mb-4 text-center">
-                
-                <div class="card shadow-lg border-4 bordures rounded-5" style="height: auto;">
-
-                    <a href="plats.html" class="text-decoration-none">
-
-                        <p class="card-text fs-4 fw-medium mt-4">Retrouvez tous nos plats ici</p>
-
-                        <img src="assets\img\icones\icone_plats_transp.png" class="card-img rounded-5 w-50 p-2" alt="" title="">
-                
-                        <div class="mb-3 ms-3 me-3 rounded-4 fond_logo" style="height: 3rem;">
-                  
-                            <p class="fs-3 fw-medium lettres_blanches">PLATS</p>
-                
-                        </div>
-
-                    </a>
-
-                </div>
-                
-            </div> -->
-
         </div>
 
+        <!-- boussole -->
         <div class="row">
 
             <div class="col-lg-12 mt-2 d-flex justify-content-center">
@@ -344,142 +440,34 @@
 
         </div>
 
-        <div class="row ">
+        <div class="row mb-lg-5 mt-lg-5">
 
-            <div id="promo_categorie" class="w-25"></div>
+            <!-- div categorie plat mobile -->
+            <div class="d-block d-sm-none">
 
-            <div id="promo_plat_1" class="w-100"></div>
+                    <div id="promo_categorie_mobile" class="w-100"></div>
 
-            <div id="promo_plat_2" class="w-100"></div>
+                    <div id="promo_plat_1_mobile" class="w-100"></div>
 
-
-            <!-- <div class="col-lg-3 ms-lg-5 mx-auto mt-lg-5 mb-5 mb-lg-5">
-
-                <div class="ms-5" style="width: 14.5rem; height: 6rem;">
-                
-                    <p class="fs-3 d-flex justify-content-center align-items-center fw-medium panneaux" style="width: 14.5rem; height: 6rem;"  >Veggie Food</p>
-
-                </div>
-
-                <div class="card border-3 bordures rounded-5" style="height: auto;">
-
-                    <img src="assets\img\categories\veggie_cat.jpg" class="card-img-top p-3 rounded-5" alt="" title="">
-        
-                    <div class="card-body p-2 mb-3 ms-3 me-3 rounded-4 fond_logo" style="height: 3rem;">
-          
-                        <a href="plats_par_categorie.html?id=" + data.categorie.id_categorie class="text-decoration-none">
-                            <p class="card-text fs-3 fw-medium text-center shadow-lg lettres_blanches">VEGGIE</p>
-                        </a>
-        
-                    </div>
-
-                </a>
+                    <div id="promo_plat_2_mobile" class="w-100" ></div>
 
             </div>
 
-            </div>
+            <!-- div categorie plat desktop -->
+            <div class="d-flex justify-content-around">
 
-            <div class="col-lg-3 ms-lg-5 mx-auto mt-lg-5 mb-5 mb-lg-5">
+                    <div id="promo_categorie" class="w-25 d-none d-lg-block"></div>
 
-                <div class="ms-5" style="width: 14.5rem; height: 6rem;">
-                
-                    <p class="fs-3 d-flex justify-content-center align-items-center fw-medium panneaux" style="width: 14.5rem; height: 6rem;"  >Spécialité <br>The District</p>
+                    <div id="promo_plat_1" class="w-25 d-none d-lg-block"></div>
 
-                </div>
-
-                <div class="card border-4 bordures rounded-5" style="height: auto;">
-            
-                    <img src="assets\img\plats\hamburger.jpg" class="card-img-top p-3 rounded-5" alt="">
-        
-                    <div class="card-body p-3">
-        
-                        <h5 class="card-title fs-3">BURGER District</h5>
-        
-                        <div class="accordion-item">
-        
-                            <h2 class="accordion-header" id="headingOne">
-        
-                              <button class="accordion-button fst-italic fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                "Burger composé d'un bun's du boulanger, de 
-                              </button>
-        
-                            </h2>
-        
-                            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-        
-                                <div class="accordion-body fst-italic fw-medium">
-        
-                                    deux steaks de 80g (origine française),
-                                    de deux tranches poitrine de porc fumée, de deux tranches cheddar affiné, salade
-                                    et oignons confits."
-        
-                                </div>
-        
-                            </div>
-        
-                        </div>
-        
-                        <a class="d-flex justify-content-center align-items-center fw-medium mx-auto shadow-lg fs-5 my-4 mb-0 rounded-4 bouton_commander" 
-                        style="height: 3rem;" href="commande.html?id=" + plate.id_plat; role="button">Commander</a>
-        
-                    </div>
-        
-                </div>
+                    <div id="promo_plat_2" class="w-25 d-none d-lg-block" ></div>
 
             </div>
-
-            <div class="col-lg-3 ms-lg-5 mx-auto mt-lg-5 mb-5 mb-lg-5">
-
-                <div class="ms-5" style="width: 14.5rem; height: 6rem;">
-                
-                    <p class="fs-3 d-flex justify-content-center align-items-center fw-medium panneaux" style="width: 14.5rem; height: 6rem;"  >A ne pas rater !</p>
-
-                </div>
-
-                <div class="card border-3 bordures rounded-5" style="height: auto;">
-
-                    <img src="assets\img\plats\spaghetti_legumes.jpg" class="card-img-top p-3 rounded-5" alt="">
-
-                    <div class="card-body p-3">
-
-                        <h5 class="card-title fs-3">PASTA Spaghettis</h5>
-
-                        <div class="accordion-item">
-
-                            <h2 class="accordion-header" id="headingOne">
-        
-                                <button class="accordion-button fst-italic fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    
-                                    "Un plat de spaghetti au pesto de basilic et 
-        
-                                </button>
-        
-                            </h2>
-        
-                            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-        
-                                <div class="accordion-body fst-italic fw-medium">
-        
-                                    légumes poêlés, très parfumé et rapide"
-
-                                </div>
-        
-                            </div>
-        
-                        </div>
-
-                        <a class="d-flex justify-content-center align-items-center fw-medium mx-auto shadow-lg fs-5 my-4 mb-0 rounded-4 bouton_commander" 
-                        style="height: 3rem;" href="commande.html" role="button">Commander</a>
-
-                    </div>
-
-                </div>
-
-            </div> -->
 
         </div>
 
-        <div class="row">
+        <!-- images labels restaurateur-->
+        <div class="row d-none d-lg-block">
 
             <div class="col-lg-12 mt-2 d-flex justify-content-around">
 
@@ -493,11 +481,41 @@
 
         </div>
 
+        <div class="row">
+
+            <div class="accordion-item">
+            
+                <h2 class="accordion-header" id="headingOne">
+            
+                    <button class="accordion-button fst-italic fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Lire la description du plat
+                    </button>
+            
+                </h2>
+            
+                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            
+                    <div class="accordion-body fst-italic fw-medium">
+            
+                        "Burger composé d'un bun's du boulanger, dedeux steaks de 80g (origine française),
+                        de deux tranches poitrine de porc fumée, de deux tranches cheddar affiné, salade
+                        et oignons confits."
+            
+                    </div>
+            
+                </div>
+            
+            </div>
+
+        </div>
+
     </main>
 
 
+    <!-- FOOTER -->
     <footer class="container-fluid bordures_footer fond_logo">
 
+        <!-- phrase reseaux sociaux -->
         <div class="row text-center">
 
             <div class="col-12 col-lg-12 fs-3 fst-italic fw-medium">
@@ -510,6 +528,7 @@
 
         </div>
 
+        <!-- icones reseaux sociaux -->
         <div class="row ">
 
             <div class="col-7  col-lg-2 offset-5 mx-auto d-flex align-items-center">
@@ -536,8 +555,8 @@
 
     </footer>
 
-<!-- </div> -->
 
+    <!-- liens fichiers javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
@@ -549,6 +568,7 @@
     <script async src="https://app2.weatherwidget.org/js/?id=ww_5a5f5bdcff26b"></script>
 
     <script src="assets/js/remplissage_index.js"></script>
+
 
 </body>
 </html>
